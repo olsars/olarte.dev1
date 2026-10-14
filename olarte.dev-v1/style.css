@@ -1,0 +1,117 @@
+/* General */
+body{
+    margin: 0;
+    background-color: #0D1B2A;
+    color: #F8FAFC;
+
+    text-align: center;
+}
+.top-of-screen{
+    margin-bottom: 100px;
+}
+
+/* Navigation Bar */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: #08111F;
+    padding: 8px 16px;
+    vertical-align: top;
+}
+nav a {
+    color: #00BFFF;
+    text-decoration: none;
+    transition: color 0.5s, font-size 0.5s;
+}
+nav a:hover {
+    color: white;
+    font-size: larger;
+}
+.nav-center{
+    display: flex;
+    gap: 30px;
+}
+
+.olarte-logo-nav img{
+    max-width: 40px;
+    height: auto;
+    transition: max-width 0.5s;
+}
+.olarte-logo-nav img:hover{
+    max-width: 50px;
+}
+
+/* Right Side of Navigation */
+.nav-right{
+    display: flex;
+    gap: 15px;
+}
+.insta img{
+    max-width: 40px;
+    height: auto;
+    transition: max-width 0.5s;
+}
+.insta img:hover{
+    max-width: 50px;
+
+}
+.github img{
+    max-width: 40px;
+    height: auto;
+    transition: max-width 0.5s;
+}
+.github img:hover{
+    max-width: 50px;
+}
+
+/* About Section*/
+.about-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 20px;
+}
+.aboutlogo{
+    width: 400px;
+    height: auto;
+}
+.about-text{
+    max-width: 500px;
+    text-align: left;
+}
+
+/* Projects Section */
+.project-section{
+    background-color: #0A1624;
+}
+.project-portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #102A43;
+    padding: 80px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 16px;
+}
+ .project-portfolio-button{
+    line-height: 50px;
+    display: inline-block;
+                
+    border-color: #00BFFF;
+    border-radius: 16px;
+    border: solid 2px;
+    cursor: pointer;
+    background-color: #102A43;
+    color: #00BFFF;
+    transition: color 0.5s, background-color 0.5s, opacity 0.5s, padding 0.5s;
+}
+.project-portfolio-button:hover{
+    background-color: #00BFFF;
+    color: white;
+    opacity: 0.8;
+    padding: 15px 15px;
+}
