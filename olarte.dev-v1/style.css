@@ -3,11 +3,9 @@ body{
     margin: 0;
     background-color: #0D1B2A;
     color: #F8FAFC;
-
-    text-align: center;
 }
-.top-of-screen{
-    margin-bottom: 100px;
+h2{
+    text-align: center;
 }
 
 /* Navigation Bar */
@@ -66,6 +64,12 @@ nav a:hover {
     max-width: 50px;
 }
 
+/* Top of Page*/
+.top-of-screen{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 /* About Section*/
 .about-section{
     display: flex;
@@ -73,6 +77,9 @@ nav a:hover {
     align-items: center;
     gap: 50px;
     padding: 80px 20px;
+}
+.about-section h2{
+    text-align: left;
 }
 .aboutlogo{
     width: 400px;
@@ -87,20 +94,23 @@ nav a:hover {
 .project-section{
     background-color: #0A1624;
 }
-.project-portfolio{
+.project-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.project-card {
+    background-color: #102A43;
+    padding: 20px;
+    border-radius: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #102A43;
-    padding: 80px 20px;
-    max-width: 700px;
-    margin: 0 auto;
-    border-radius: 16px;
 }
- .project-portfolio-button{
+ .project-button{
     line-height: 50px;
     display: inline-block;
-                
+
     border-color: #00BFFF;
     border-radius: 16px;
     border: solid 2px;
@@ -109,9 +119,13 @@ nav a:hover {
     color: #00BFFF;
     transition: color 0.5s, background-color 0.5s, opacity 0.5s, padding 0.5s;
 }
-.project-portfolio-button:hover{
+.project-button:hover{
     background-color: #00BFFF;
     color: white;
     opacity: 0.8;
     padding: 15px 15px;
+}
+.sentinel img, .sentinel p{
+    max-width: 400px;
+    height: auto;
 }
