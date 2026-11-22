@@ -9,7 +9,7 @@ h2{
 }
 
 /* Navigation Bar */
-nav{
+nav{    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,12 +107,22 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
 }
- .project-button{
+.project-card img {
+    max-width: 560px;
+    height: auto;
+}
+.project-card p{
+    max-width: 560px;
+    height: auto;
+    margin-bottom: 20px;
+}
+ .project-button{   
     line-height: 50px;
     display: inline-block;
 
+    margin-top: auto;
     border-color: #00BFFF;
-    border-radius: 16px;
+    border-radius: 16px;    
     border: solid 2px;
     cursor: pointer;
     background-color: #102A43;
@@ -122,10 +132,6 @@ nav a:hover {
 .project-button:hover{
     background-color: #00BFFF;
     color: white;
-    opacity: 0.8;
-    padding: 15px 15px;
-}
-.sentinel img, .sentinel p{
-    max-width: 400px;
-    height: auto;
+    opacity: 0.8;   
+    padding: 5px 5px;
 }
