@@ -81,6 +81,10 @@ nav a:hover {
 }
 header h1{
     transition: color 0.75s, font-size 0.5s;
+    max-width: fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto
 }
 header h1:hover{
     color:#00BFFF;
