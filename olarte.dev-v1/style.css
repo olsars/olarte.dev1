@@ -1,5 +1,5 @@
 /* General */
-@import url('https://googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
 
 body{
     margin: 0;
@@ -66,11 +66,29 @@ nav a:hover {
 .github img:hover{
     max-width: 50px;
 }
+/* Home Section (Top of Screen & About Section) */
+.home{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 /* Top of Page*/
 .top-of-screen{
     margin-bottom: 20px;
     text-align: center;
+}
+header h1{
+    transition: color 0.75s, font-size 0.5s;
+}
+header h1:hover{
+    color:#00BFFF;
+    cursor: pointer;
+    font-size: 45px;
+}
+.animated{
+    font-size: 20px;
 }
 
 /* About Section*/
@@ -91,6 +109,11 @@ nav a:hover {
 .about-text{
     max-width: 500px;
     text-align: left;
+}
+.about-text p {
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 400;
 }
 
 /* Projects Section */

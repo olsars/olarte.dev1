@@ -5,49 +5,52 @@
         <title>olarte.dev</title>
         <link rel="icon" type="image/png" href="images/olartedevlogo6-nobg-notxt.png">
         <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
     </head> 
 
     <body>
-        <section class="top-of-screen">
-            
-            <nav>
-                <div class="nav-left">
-                    <!-- Top Left -->
-                    <a class="olarte-logo-nav" href="index.html"><img src="images/olartedevlogo6-nobg-notxt.png"></a>  
+        <section class="home">
+            <section class="top-of-screen">
+                
+                <nav>
+                    <div class="nav-left">
+                        <!-- Top Left -->
+                        <a class="olarte-logo-nav" href="index.html"><img src="images/olartedevlogo6-nobg-notxt.png"></a>  
+                    </div>
+                    
+                    <div class="nav-center">
+                        <!-- Top Center -->
+                        <a class="about-nav" href="#aboutref">About</a>
+                        <a class="career-nav" href="#careerref">Career</a> 
+                        <a class="projects" href="#projectref">Projects</a>
+                    </div>
+
+                    <div class="nav-right">
+                        <!-- Top Right -->
+                        <a class="insta" href="https://instagram.com/samu.ola/" target="_blank"><img src="images/instaicon.png" alt="instagram icon"></a>
+                        <a class="github" href="https://github.com/olsars" target="_blank"><img src="images/githubicon.png" alt="github icon"></a>
+                    </div>
+                </nav>
+                
+                <header>
+                    <h1>olarte.dev</h1>
+                    <span class="animated"></span>
+                </header>  
+            </section>
+
+            <section class="about-section" id="aboutref"> 
+                <div class="about-text">
+                    <h2>About</h2>
+                    <p> 
+                        Hi, my name is Samuel Olarte. I'm a Computer Engineering
+                        student interested in software, hardware, web development,
+                        and homelab projects. 
+                    </p>
                 </div>
                 
-                <div class="nav-center">
-                    <!-- Top Center -->
-                    <a class="about-nav" href="#aboutref">About</a>
-                    <a class="career-nav" href="#careerref">Career</a> 
-                    <a class="projects" href="#projectref">Projects</a>
-                </div>
-
-                <div class="nav-right">
-                    <!-- Top Right -->
-                    <a class="insta" href="https://instagram.com/samu.ola/" target="_blank"><img src="images/instaicon.png" alt="instagram icon"></a>
-                    <a class="github" href="https://github.com/olsars" target="_blank"><img src="images/githubicon.png" alt="github icon"></a>
-                </div>
-            </nav>
-            
-            <header>
-                <h1>olarte.dev</h1>
-                <h2 id="typing-text"></h2>
-            </header>  
+                <img class="aboutlogo" src="images/olartedevlogo6-notxt.png" alt="olarte.dev logo">
+            </section>  
         </section>
-
-        <section class="about-section"> 
-            <div class="about-text">
-                <h2>About</h2>
-                <p> 
-                    Hi, my name is Samuel Olarte. I'm a Computer Engineering
-                    student interested in software, hardware, web development,
-                    and homelab projects. This website is a work in progress.
-                </p>
-            </div>
-            
-            <img class="aboutlogo" src="images/olartedevlogo6-notxt.png" alt="olarte.dev logo">
-        </section>  
 
         <section class="career-section" id="careerref">
             <!-- <h2>Career</h2> -->
@@ -86,6 +89,15 @@
             </div>
 
         </section>
-        <script src="script.js"></script>
+
+        <script>
+            var typed= new Typed('.animated', {
+            strings:['Computer Engineering Student', 'Software Developer', 'Embedded Systems', 'Homelabing', 'Larping'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            typeDelay: 1000,
+            loop: true
+            })
+        </script>
     </body>
 </html>
