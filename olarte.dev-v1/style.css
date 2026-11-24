@@ -102,11 +102,13 @@ header h1:hover{
     align-items: center;
     gap: 50px;
     padding: 80px 20px;
+    flex-wrap: wrap;
 }
 .about-section h2{
     text-align: left;
 }
 .aboutlogo{
+    width: 100%;
     max-width: 400px;
     height: auto;
 }
@@ -132,6 +134,11 @@ header h1:hover{
     margin-left: auto;
     margin-right: auto;
 }
+@media (max-width: 768px){
+    .project-grid{
+        grid-template-columns: 1fr;
+    }
+}
 .project-card {
     background-color: #102A43;
     padding: 20px;
@@ -143,6 +150,8 @@ header h1:hover{
 .project-card img, .project-card iframe{
     max-width: 560px;
     height: auto;
+    aspect-ratio: 16/9;
+    width: 100%;
 }
 .project-card p{
     max-width: 560px;
