@@ -1,5 +1,6 @@
 /* General */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 body{
     margin: 0;
@@ -11,6 +12,8 @@ h2{
     text-align: center;
 }
 
+
+
 /* Navigation Bar */
 nav{    
     display: flex;
@@ -19,7 +22,6 @@ nav{
     
     background-color: #08111F;
     padding: 8px 16px;
-    vertical-align: top;
 }
 nav a {
     color: #00BFFF;
@@ -35,6 +37,14 @@ nav a:hover {
     gap: 30px;
 }
 
+/*Left Side of Navigation*/
+.nav-left{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px 0px;
+}
 .olarte-logo-nav img{
     max-width: 40px;
     height: auto;
@@ -43,6 +53,8 @@ nav a:hover {
 .olarte-logo-nav img:hover{
     max-width: 50px;
 }
+
+
 
 /* Right Side of Navigation */
 .nav-right{
@@ -66,7 +78,10 @@ nav a:hover {
 .github img:hover{
     max-width: 50px;
 }
-/* Home Section (Top of Screen & About Section) */
+
+
+
+/* Home Section (Top of Screen (NAV) & Home Page Section) */
 .home{
     min-height: 100vh;
     display: flex;
@@ -74,26 +89,44 @@ nav a:hover {
     justify-content: space-between;
 }
 
+
+
 /* Top of Page*/
 .top-of-screen{
     margin-bottom: 20px;
-    text-align: center;
 }
-header h1{
-    transition: color 0.75s, font-size 0.5s;
-    max-width: fit-content;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto
-}
-header h1:hover{
+
+
+
+/* Start Page */
+.hello-world{
+    font-family: 'JetBrains Mono',monospace;
     color:#00BFFF;
-    cursor: pointer;
-    font-size: 45px;
+    text-align: left;
+    margin-bottom: 0px;
 }
-.animated{
-    font-size: 20px;
+.home-name{
+    font-size: 75px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
+.animated-div{
+    font-size: 30px;
+    font-family: 'JetBrains Mono', monospace;
+    min-height: lh;
+}
+.home-logo{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    filter: 
+    drop-shadow(0 0 5px #00BFFF)
+    drop-shadow(0 0 20px rgba(0, 191, 255, 0.7));
+    display:block;
+}
+
+
 
 /* About Section*/
 .about-section{
@@ -102,13 +135,10 @@ header h1:hover{
     align-items: center;
     gap: 50px;
     padding: 80px 20px;
+    flex-wrap: wrap;
 }
 .about-section h2{
     text-align: left;
-}
-.aboutlogo{
-    max-width: 400px;
-    height: auto;
 }
 .about-text{
     max-width: 500px;
@@ -119,6 +149,8 @@ header h1:hover{
     line-height: 1.6;
     font-weight: 400;
 }
+
+
 
 /* Projects Section */
 .project-section{
@@ -132,6 +164,11 @@ header h1:hover{
     margin-left: auto;
     margin-right: auto;
 }
+@media (max-width: 768px){
+    .project-grid{
+        grid-template-columns: 1fr;
+    }
+}
 .project-card {
     background-color: #102A43;
     padding: 20px;
@@ -143,6 +180,8 @@ header h1:hover{
 .project-card img, .project-card iframe{
     max-width: 560px;
     height: auto;
+    aspect-ratio: 16/9;
+    width: 100%;
 }
 .project-card p{
     max-width: 560px;
