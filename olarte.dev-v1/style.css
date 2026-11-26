@@ -26,11 +26,11 @@ nav{
 nav a {
     color: #00BFFF;
     text-decoration: none;
-    transition: color 0.5s, font-size 0.5s;
+    transition: color 0.5s, transform 0.5s;
 }
 nav a:hover {
     color: white;
-    font-size: larger;
+    transform: scale(1.3);
 }
 .nav-center{
     display: flex;
@@ -40,20 +40,34 @@ nav a:hover {
 /*Left Side of Navigation*/
 .nav-left{
     display: flex;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
     justify-content: space-around;
-    padding: 8px 0px;
+    padding: 8px 5px;
+    transition: transform 0.5s;
+}
+.nav-left:hover{
+    transform: scale(1.1);
 }
 .olarte-logo-nav img{
     max-width: 40px;
     height: auto;
-    transition: max-width 0.5s;
+    transition: transform 0.5s;
 }
 .olarte-logo-nav img:hover{
-    max-width: 50px;
+    transform: scale(1.2);
 }
-
+.website-name{
+    font-family: 'JetBrains Mono',monospace;
+}
+@media (max-width: 768px){
+    .website-name{
+        display: none;
+    }
+    .olarte-logo-nav{
+        padding: 8px 0px;
+    }
+}
 
 
 /* Right Side of Navigation */
@@ -61,22 +75,14 @@ nav a:hover {
     display: flex;
     gap: 15px;
 }
-.insta img{
+.nav-right img{
     max-width: 40px;
     height: auto;
-    transition: max-width 0.5s;
+    transition: transform 0.5s;
 }
-.insta img:hover{
-    max-width: 50px;
+.nav-right img:hover{
+    transform: scale(1.3);
 
-}
-.github img{
-    max-width: 40px;
-    height: auto;
-    transition: max-width 0.5s;
-}
-.github img:hover{
-    max-width: 50px;
 }
 
 
@@ -99,11 +105,23 @@ nav a:hover {
 
 
 /* Start Page */
+.start-page{
+    max-width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+.start-text{
+    font-size: clamp(1.75rem, 1rem + 3vw, 3.5rem);
+}
+
 .hello-world{
     font-family: 'JetBrains Mono',monospace;
     color:#00BFFF;
     text-align: left;
     margin-bottom: 0px;
+    font-size: 30px;
 }
 .home-name{
     font-size: 75px;
@@ -112,9 +130,9 @@ nav a:hover {
     margin-bottom: 0px;
 }
 .animated-div{
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'JetBrains Mono', monospace;
-    min-height: lh;
+    min-height: 1lh;
 }
 .home-logo{
     width: 100%;
@@ -124,6 +142,17 @@ nav a:hover {
     drop-shadow(0 0 5px #00BFFF)
     drop-shadow(0 0 20px rgba(0, 191, 255, 0.7));
     display:block;
+    transition: filter 0.5s;
+}
+.home-logo:hover{
+    filter: 
+    drop-shadow(0 0 5px #00bfff)
+    drop-shadow(0 0 35px rgba(0, 191, 255));
+}
+@media (max-width: 768px){
+    .home-logo{
+        max-width: 300px;
+    }
 }
 
 
