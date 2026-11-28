@@ -13,7 +13,7 @@ body{
     color:#00BFFF;
     text-align: left;
     margin-bottom: 0px;
-    font-size: 30px;
+    font-size: 20px;
 }
 .section-title{
     font-size: 40px;
@@ -44,7 +44,7 @@ body{
 }
 .info-card{
     background-color: #102236;
-    border: 2px solid #3a3c3f;
+    border: 2px solid #1b2b3f;
     border-radius: 16px; 
     
     padding: 0px 5px;
@@ -52,7 +52,7 @@ body{
     width: fit-content;
 }
 .info-card-text{
-    padding: 0px; 
+    padding: 4px 30px 4px 4px; 
     margin: 0px;
 }
 
@@ -153,6 +153,9 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+}
+.hello-world{
+    font-size: 30px;
 }
 .home-name{
     text-align: left;
