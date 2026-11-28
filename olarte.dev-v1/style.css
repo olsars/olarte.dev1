@@ -3,15 +3,58 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 body{
-    margin: 0;
+    margin: 0px 0px;
     background-color: #0D1B2A;
     color: #F8FAFC;
      font-family: 'Roboto', sans-serif;
 }
-h2{
-    text-align: center;
+.page-starter{
+    font-family: 'JetBrains Mono',monospace;
+    color:#00BFFF;
+    text-align: left;
+    margin-bottom: 0px;
+    font-size: 30px;
 }
-
+.section-title{
+    font-size: 40px;
+    margin: 0;
+}
+.section-paragraph{
+    max-width: 50ch;
+    color:#94A3B8;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.section-separator{
+    border-bottom: 2px solid #1b2b3f;
+}
+@media (max-width: 768px){
+   .page-starter{
+        font-size: 18px;
+    }
+    .section-paragraph{
+        font-size: 15px;
+    }
+}
+.info-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.info-card{
+    background-color: #102236;
+    border: 2px solid #3a3c3f;
+    border-radius: 16px; 
+    
+    padding: 0px 5px;
+    margin: 0px;
+    width: fit-content;
+}
+.info-card-text{
+    padding: 0px; 
+    margin: 0px;
+}
 
 
 /* Navigation Bar */
@@ -38,6 +81,7 @@ nav a:hover {
     gap: 25px;
 
 }
+
 
 /*Left Side of Navigation*/
 .nav-left{
@@ -73,10 +117,18 @@ nav a:hover {
     max-width: 40px;
     height: auto;
 }
+@media (max-width: 768px){
+    .nav-right{
+        gap: 5px;
+    }
+    .nav-right img{
+        max-width: 30px;
+    }
+}
 
 /* Home Section (Top of Screen (NAV) & Home Page Section) */
 .home{
-    min-height: 100vh;
+    min-height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -102,14 +154,6 @@ nav a:hover {
     align-items: center;
     gap: 20px;
 }
-
-.hello-world{
-    font-family: 'JetBrains Mono',monospace;
-    color:#00BFFF;
-    text-align: left;
-    margin-bottom: 0px;
-    font-size: 30px;
-}
 .home-name{
     text-align: left;
     margin-top: 0px;
@@ -120,11 +164,6 @@ nav a:hover {
     font-size: 25px;
     font-family: 'JetBrains Mono', monospace;
     min-height: 1lh;
-}
-.start-paragraph{
-    max-width: 50ch;
-    color:#94A3B8;
-    font-size: 20px;
 }
 .btn{
     display: inline-block;
@@ -172,9 +211,6 @@ nav a:hover {
     .hello-world{
         font-size: 20px;
     }
-    .start-paragraph{
-        font-size: 15px;
-    }
     .btn{
         font-size: 12px;
         padding: 9px 6px;
@@ -186,23 +222,32 @@ nav a:hover {
 /* About Section*/
 .about-section{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 80px 20px;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 0px; 
+    padding: 40x 20px;
     flex-wrap: wrap;
 }
-.about-section h2{
-    text-align: left;
+.about-text {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: left;
 }
 .about-text{
     max-width: 500px;
-    text-align: left;
+    margin: 0px 400px;
 }
 .about-text p {
-    font-size: 20px;
-    line-height: 1.6;
+    line-height: 1.5;
     font-weight: 400;
+}
+@media(max-width: 768px){
+    .about-section{
+        margin: 10px;
+    }
+    .about-text{
+        margin: 10px;
+    }
 }
 
 
@@ -210,6 +255,9 @@ nav a:hover {
 /* Projects Section */
 .project-section{
     background-color: #0A1624;
+}
+.project-title{
+    text-align: center;
 }
 .project-grid{
     display: grid;
